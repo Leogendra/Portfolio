@@ -7,7 +7,7 @@ const DarkPalette = createTheme({
             white: '#ffffff'
         },
         primary: {
-            main: '#3D55C4'
+            main: '#017200'
         },
         text: {
             primary: '#ffffff',
@@ -15,8 +15,8 @@ const DarkPalette = createTheme({
 
         },
         background: {
-            default: '#3d3d3d',
-            paper: '#51505b'
+            default: '#2b2d31',
+            paper: '#313338'
         },
         contrastThreshold: 3,
         tonalOffset: 0.2,

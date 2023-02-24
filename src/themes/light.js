@@ -7,7 +7,7 @@ const LightPalette = createTheme({
             white: '#ffffff'
         },
         primary: {
-            main: '#3D55C4'
+            main: '#019a00'
         },
         text: {
             primary: '#000000',
