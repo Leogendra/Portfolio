@@ -23,6 +23,7 @@ import PreviewIcon from '@mui/icons-material/Preview';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LaunchIcon from '@mui/icons-material/Launch';
 import SchoolIcon from '@mui/icons-material/School';
 import PersonIcon from '@mui/icons-material/Person';
 
@@ -66,7 +67,7 @@ const ExpandMore = styled(
     }),
 }));
 
-export default function CardUnit({ Languages, GitHubRepo, Name, Date, ImageLight, ImageDark, Comment, Description, PreviewURL, Type }) {
+export default function CardUnit({ Languages, GitHubRepo, Site, Name, Date, ImageLight, ImageDark, Comment, Description, PreviewURL, Type }) {
 
     const [expanded, setExpanded] = useState(false);
     const [visible, setVisible] = useState(false);
@@ -82,6 +83,8 @@ export default function CardUnit({ Languages, GitHubRepo, Name, Date, ImageLight
         setExpanded(!expanded);
     };
 
+    const link = GitHubRepo != '' ? GitHubRepo : Site;
+
     return (
         <Card sx={{ maxWidth: 550, margin: '0 auto', float: 'none', boxShadow: 3, borderRadius: 3, '&:hover': { boxShadow: 20, borderRadius: 8 } }}>
             <CardHeader
@@ -96,9 +99,10 @@ export default function CardUnit({ Languages, GitHubRepo, Name, Date, ImageLight
                     </AvatarGroup>
                 }
                 action={
-                    <a href={GitHubRepo} rel='noopener noreferrer' target='_blank'>
+                    <a href={link} rel='noopener noreferrer' target='_blank'>
                         <IconButton aria-label='repo' sx={{ color: 'text.primary', '&:hover': { color: 'primary.main' } }}>
-                            <GitHubIcon />
+                            {GitHubRepo != '' && <GitHubIcon />}
+                            {Site != '' && <LaunchIcon />}
                         </IconButton>
                     </a>
                 }
@@ -109,7 +113,7 @@ export default function CardUnit({ Languages, GitHubRepo, Name, Date, ImageLight
                 component='img'
                 height='300'
                 image={cookies.mode === 'dark' ? require('../../static/images/projects/' + ImageDark) : require('../../static/images/projects/' + ImageLight)}
-                alt='Image not found'
+                alt={Name}
             />
             <CardContent>
                 <Stack direction='row' spacing={1} style={{ display: 'flex', alignItems: 'center' }}>

@@ -14,7 +14,7 @@ export default function Footer() {
 
             <Grid item px={3} xs={12} sm={12} md={6} lg={6} xl={6} justifyContent='flex-end' alignItems='center' sx={{ display: 'flex' }}>
                 <Typography variant='body2' sx={{ color: 'text.secondary' }}>
-                    Dernière mise à jour le 24 Février 2023
+                    Dernière mise à jour le 4 Mars 2023
                 </Typography>
             </Grid>
         </Grid>

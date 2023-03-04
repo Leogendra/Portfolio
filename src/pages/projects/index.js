@@ -71,6 +71,7 @@ export default function Projects() {
                         <CardUnit
                             Languages={index.Languages}
                             GitHubRepo={index.GitHubRepo}
+                            Site={index.Site}
                             Name={index.Name}
                             Date={index.Date}
                             ImageLight={index.ImageLight}
