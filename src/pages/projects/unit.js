@@ -15,7 +15,6 @@ import {
     Avatar,
     AvatarGroup,
     IconButton,
-    Fade,
     Stack
 } from '@mui/material';
 
@@ -125,15 +124,6 @@ export default function CardUnit({ Languages, GitHubRepo, Site, Name, Date, Imag
                 </Stack>
             </CardContent>
             <CardActions disableSpacing>
-                <IconButton disabled onClick={() => navigate('/' + PreviewURL)} aria-label='preview' sx={{ color: 'text.primary', '&:hover': { color: 'primary.main' } }}>
-                    <PreviewIcon />
-                </IconButton>
-                <IconButton aria-label='share' onClick={handleShareClick} sx={{ color: 'text.primary', '&:hover': { color: 'primary.main' } }}>
-                    <ShareIcon />
-                </IconButton>
-                <Fade in={visible === true} timeout={400}>
-                    <Typography variant='caption' color='primary'>Lien copié !</Typography>
-                </Fade>
                 <ExpandMore
                     expand={expanded}
                     onClick={handleExpandClick}

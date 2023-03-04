@@ -34,9 +34,11 @@ export default function MainPage() {
                 </Link>
             </Breadcrumbs>
             <Root>
-                <Box p={4} sx={{ backgroundColor: 'background.paper', borderRadius: 8, boxShadow: 3 }}>
+                <Box p={4} sx={{ backgroundColor: 'background.paper', 
+                            borderRadius: 8, 
+                            boxShadow: 3 }}>
                     <Typography variant='h3' sx={{ color: 'primary.main', fontWeight: 'bold' }}>GatienH-Portfolio</Typography>
-                    <Typography py={2} variant='h6'>Je suis Gatien HADDAD. bienvenue sur mon site portfolio. Vous pouvez y retrouver les projets sur lesquels j'ai travaillé ainsi que mon CV.</Typography>
+                    <Typography py={2} variant='h6'>Je suis Gatien HADDAD. bienvenue sur mon portfolio. Vous pouvez y retrouver les projets sur lesquels j'ai travaillé ainsi que mon CV.</Typography>
                     <br></br>
                     {/* <Alert variant='outlined' severity='error' sx={{ color: 'text.primary' }}>Le site est encore en cours de développement</Alert> */}
                 </Box>
