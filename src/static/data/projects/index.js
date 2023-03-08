@@ -112,8 +112,8 @@ const kavarm = {
 
 const tournois = {
     Languages: ['php', 'mysql', 'js'],
-    GitHubRepo: '',
-    Site: 'https://tournoi.adam-net.fr/',
+    GitHubRepo: 'https://github.com/Gaiko19/HLIN405-ManageurDeTournois',
+    Site: '',
     Name: 'Manageur de Tournois',
     Date: 'Hivers 2021',
     ImageLight: 'tournois_light.png',
